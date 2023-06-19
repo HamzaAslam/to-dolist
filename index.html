@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <nav>
+      <!-- ----------Nav bar starts------------- -->
+      <div class="container">
+        <h1 class="logo">To-Do List</h1>
+
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">To-Do</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- --------------- Nav bar ends --------------- -->
+
+    <div class="to-do-sec">
+      <h2>What's On Your Mind</h2>
+      <form class="form-todo">
+      <div class="input-sec">
+        <input
+        class="input-txt"
+          type="text"
+          placeholder="    Add your Todo here..."
+          name="todo"
+          id=""
+        />
+        <input class="input-time" type="datetime-local" name="input-time" value="00:00"  onchange="setAlarmTime(this.value)"/>
+        <input class="main-btn" value="Add Todo" type="submit"/>
+
+        <ul class="todo-list">
+          
+        </ul>
+      </div>
+      
+    </div>
+  </body>
+</html>
