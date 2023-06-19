@@ -73,6 +73,9 @@ nav {
   align-items: center;
   text-transform: capitalize;
 }
+.container .hide {
+  display: none;
+}
 
 .todo-list li {
   display: flex;
@@ -88,4 +91,61 @@ nav {
   color: #fff; */
 
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav {
+    height: 50vh;
+  }
+  .to-do-sec .input-txt {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .to-do-sec {
+    margin: 0 auto;
+  }
+  .to-do-sec .input-time {
+    width: 45%;
+  }
+  .to-do-sec .main-btn {
+    width: 45%;
+  }
+  .input-sec {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navigation-list {
+    display: none;
+  }
+  .container .hide {
+    display: block;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav {
+    height: 50vh;
+  }
+  .to-do-sec .input-time {
+    width: 45%;
+  }
+  .to-do-sec .main-btn {
+    width: 45%;
+  }
+  .to-do-sec .input-txt {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .form-todo .input-sec {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
